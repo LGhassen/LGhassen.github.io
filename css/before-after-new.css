@@ -1,0 +1,98 @@
+@import "lesshat";
+
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+}
+ 
+.resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:2px;
+  margin-left:-2px;
+ 
+  background: rgba(200,200,200,.2);
+  cursor: ew-resize;
+}
+ 
+.handle:after {  /* Big orange knob  */
+    position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+ 
+    /*content:'\21d4';*/
+	content:url(bg_direction_nav2.png);
+	margin: -16px 0 0 -30px;
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    line-height:28px;
+ 
+/*    background: #ffb800; /* @orange */
+	background: rgba(230,230,230,0);
+/*    border:1px solid #e6a600; /* darken(@orange, 5%) */
+	border:1px solid rgba(230,230,230,0); /* darken(@orange, 5%) */
+    border-radius: 100%;
+    transition:all 0.3s ease;
+    box-shadow:
+	0 2px 6px rgba(0,0,0,0), 
+      inset 0 2px 0 rgba(255,255,255,0),
+/*      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
+	inset 0 60px 50px -30px rgba(230,230,230,0); /* lighten(@orange, 20%)*/ 
+}
+
+/* .handle:before {  
+    position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+ 
+    /*content:'\21d4';
+	content:url(bg_direction_nav.png);
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    line-height:28px;
+ 
+/*    background: #ffb800;
+	background: rgba(230,230,230,0);
+/*    border:1px solid #e6a600; /* darken(@orange, 5%)
+border:1px solid rgba(230,230,230,0); /* darken(@orange, 5%)
+    border-radius: 100%;
+    transition:all 0.3s ease;
+    box-shadow:
+	0 2px 6px rgba(0,0,0,0), 
+      inset 0 2px 0 rgba(255,255,255,0),
+/*      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)
+	inset 0 60px 50px -30px rgba(230,230,230,0); /* lighten(@orange, 20%)
+}
+ */
+.draggable:before {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:48px;
+    font-size:30px;
+}
