@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "BlackHole",
+"productVersion": "0.1",
+"dataUrl": "WebGLbuild.data.unityweb",
+"wasmCodeUrl": "WebGLbuild.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGLbuild.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.21f1"
+}
